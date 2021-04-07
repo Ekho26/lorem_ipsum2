@@ -1,0 +1,43 @@
+.header {
+
+    // Navigation bar
+    nav {
+        padding: 24px;
+    }
+
+    // Logo
+    // &__logo{
+    //     img {
+
+    //     }
+    // }
+
+    // Hamburger
+    &__menu {
+
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $green;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    // Links
+    &__links {
+
+        a {
+            font-size: $font-sm;
+            color: black;
+            font-weight: 600;
+        }
+    }
+
+    &__cta {
+        font-size: $font-sm;
+    }
+}
