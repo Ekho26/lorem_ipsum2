@@ -16,13 +16,13 @@ function Navbar() {
                     <span></span>
                     <span></span>
                     </a>
-                    <div className="header__links">
+                    <div className="header__links hide-for-mobile">
                         <a href="#">HOME</a>
                         <a href="#">FEATURES</a>
                         <a href="#">ABOUT US</a>
                         <a href="#">LOG IN</a>
                     </div>
-                    <a href="#" className="button header__cta">GET DEMO</a>
+                    <a href="#" className="button header__cta hide-for-mobile">GET DEMO</a>
                 </nav>
             </header>
         </div>
