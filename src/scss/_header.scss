@@ -8,8 +8,17 @@
     // Logo
     &__logo{
         img {
-            height: 2rem;
+            height: 2.215rem;
         }
+    }
+
+    // Companny name
+    p {
+        margin: 0;
+        font-size: $font-med;
+        color: black;
+        font-weight: 600;
+        padding: 0.4rem 1rem;
     }
 
     // Hamburger
@@ -17,7 +26,7 @@
 
         > span {
             display: block;
-            width: 26px;
+            width: 1.625rem;
             height: 2px;
             background-color: $green;
 
@@ -35,6 +44,7 @@
             color: black;
             font-weight: 600;
             padding: 0.5rem 1rem;
+            transition: color 200ms ease-in-out;
 
             &:first-child {
                 color: $green;
@@ -46,12 +56,23 @@
                 border-right: 1px solid rgba(0, 0, 0, 0.2);
             }
 
-            &:last-child {
+            &:hover {
+                color: $green;
             }
         }
     }
 
     &__cta {
         font-size: $font-sm;
+    }
+
+    // Overlay Menu
+    .overlay {
+        position: fixed;
+        top: 5.160rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient($purple, transparent);
     }
 }
