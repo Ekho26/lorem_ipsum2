@@ -81,8 +81,18 @@ button:hover, .button:hover {
   }
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+}
+
 .header nav {
   padding: 1.5rem;
+  position: relative;
+  background-color: white;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 
 .header__logo img {
@@ -95,6 +105,17 @@ button:hover, .button:hover {
   color: black;
   font-weight: 600;
   padding: 0.4rem 1rem;
+}
+
+.header .overlay {
+  display: none;
+  position: fixed;
+  top: 5.16rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6624d1), to(transparent));
+  background-image: linear-gradient(#6624d1, transparent);
 }
 
 .header__menu > span {
@@ -133,15 +154,5 @@ button:hover, .button:hover {
 
 .header__cta {
   font-size: 0.875rem;
-}
-
-.header .overlay {
-  position: fixed;
-  top: 5.160rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6624d1), to(transparent));
-  background-image: linear-gradient(#6624d1, transparent);
 }
 /*# sourceMappingURL=style.css.map */

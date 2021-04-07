@@ -1,78 +1,83 @@
 .header {
+  position: sticky;
+  z-index: 1;
 
-    // Navigation bar
-    nav {
-        padding: 1.5rem;
+  // Navigation bar
+  nav {
+    padding: 1.5rem;
+    position: relative;
+    background-color: $white;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+  }
+
+  // Logo
+  &__logo {
+    img {
+      height: 2.215rem;
     }
+  }
 
-    // Logo
-    &__logo{
-        img {
-            height: 2.215rem;
-        }
+  // Companny name
+  p {
+    margin: 0;
+    font-size: $font-med;
+    color: black;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+  }
+
+  // Hamburger
+
+  // Overlay
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 5.16rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient($purple, transparent);
+  }
+  &__menu {
+    > span {
+      display: block;
+      width: 1.625rem;
+      height: 2px;
+      background-color: $green;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
     }
+  }
 
-    // Companny name
-    p {
-        margin: 0;
-        font-size: $font-med;
-        color: black;
-        font-weight: 600;
-        padding: 0.4rem 1rem;
+  // Links
+  &__links {
+    a {
+      font-size: $font-sm;
+      color: black;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      transition: color 200ms ease-in-out;
+
+      &:first-child {
+        color: $green;
+        border: 2px solid;
+        border-radius: 8px;
+      }
+
+      &:nth-child(3) {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      &:hover {
+        color: $green;
+      }
     }
+  }
 
-    // Hamburger
-    &__menu {
-
-        > span {
-            display: block;
-            width: 1.625rem;
-            height: 2px;
-            background-color: $green;
-
-            &:not(:last-child) {
-                margin-bottom: 3px;
-            }
-        }
-    }
-
-    // Links
-    &__links {
-
-        a {
-            font-size: $font-sm;
-            color: black;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            transition: color 200ms ease-in-out;
-
-            &:first-child {
-                color: $green;
-                border: 2px solid;
-                border-radius: 8px;
-            }
-
-            &:nth-child(3) {
-                border-right: 1px solid rgba(0, 0, 0, 0.2);
-            }
-
-            &:hover {
-                color: $green;
-            }
-        }
-    }
-
-    &__cta {
-        font-size: $font-sm;
-    }
-
-    // Overlay Menu
-    .overlay {
-        position: fixed;
-        top: 5.160rem;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient($purple, transparent);
-    }
+  &__cta {
+    font-size: $font-sm;
+  }
 }
