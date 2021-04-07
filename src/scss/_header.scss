@@ -2,15 +2,15 @@
 
     // Navigation bar
     nav {
-        padding: 24px;
+        padding: 1.5rem;
     }
 
     // Logo
-    // &__logo{
-    //     img {
-
-    //     }
-    // }
+    &__logo{
+        img {
+            height: 2rem;
+        }
+    }
 
     // Hamburger
     &__menu {
@@ -34,6 +34,20 @@
             font-size: $font-sm;
             color: black;
             font-weight: 600;
+            padding: 0.5rem 1rem;
+
+            &:first-child {
+                color: $green;
+                border: 2px solid;
+                border-radius: 8px;
+            }
+
+            &:nth-child(3) {
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            &:last-child {
+            }
         }
     }
 
